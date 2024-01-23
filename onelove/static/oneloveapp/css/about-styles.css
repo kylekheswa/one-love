@@ -1,0 +1,114 @@
+/* about-styles.css */
+
+/* Set the main font family to Spline Sans */
+body {
+    font-family: 'Spline Sans', sans-serif;
+    background-color: #FFFFFF; /* White color for the background */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #ffffff; /* White color */
+    padding-top: 5px; /* Adjust the top padding as needed */
+    padding-bottom: 5px; /* Adjust the bottom padding as needed */
+}
+
+.navbar-brand {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Apply a max-width and margin to the logo image */
+.logo-img {
+    max-width: 350px; /* Adjust the max-width as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 10px; /* Adjust the margin as needed */
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: center;
+}
+
+.navbar-nav .nav-item {
+    margin: 0 15px;
+}
+
+.navbar-nav .nav-link {
+    color: #000000; /* Black color for normal state */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #FF8427; /* Orange color on hover */
+}
+
+/* Jumbotron Styles */
+.hero-section {
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-section img {
+    width: 100%; /* Make the image fill the container */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.content-section {
+    padding: 120px 0;
+    font-size: 15px; /* Adjust the font size as needed */
+    line-height: 1.8; /* Adjust the line height for better readability */
+    text-align: center;
+}
+
+/* Team Section Styles */
+.team-section {
+    padding: 50px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.team-section h2 {
+    text-align: center;
+    width: 100%;
+}
+
+.team-member {
+    flex: 0 0 25%; /* Adjust the width of each team member as needed */
+    padding: 0 15px; /* Adjust the spacing between team members as needed */
+    text-align: center;
+}
+
+.team-member img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.team-member h4,
+.team-member p {
+    text-align: center;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #FF8427; /* Orange color */
+    color: #FFFFFF; /* White color for text */
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Apply color scheme to the site */
+body {
+    background-color: #FFFFFF; /* White color for the background */
+}

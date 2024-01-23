@@ -1,0 +1,111 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>About One Love Central</title>
+    <!-- Bootstrap CSS -->
+    <link href="{% static 'oneloveapp/static/oneloveapp/css/bootstrap-css.css' %}" rel="stylesheet">
+    <!-- Custom Styles -->
+    <link rel="stylesheet" type="text/css" href="{% static 'oneloveapp/css/about-styles.css' %}">
+    <!-- Google Fonts - Bebas Neue -->
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+   <!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="{% url 'home' %}">
+            <img src="{% static 'oneloveapp/images/OneLove-Logo-01-1024x1024.png' %}" alt="One Love Logo" class="logo-img">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="{% url 'home' %}">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'about' %}">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'support' %}">Support Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'blog' %}">Blog</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+    <!-- Jumbotron / Hero Section -->
+    <div class="hero-section">
+        <img src="{% static 'oneloveapp/images/top-image.png' %}" alt="Hero Image">
+    </div>
+    
+
+    <!-- Content Section -->
+    <div class="container content-section">
+        <p>One Love Central is a non-profit organisation founded in Johannesburg, South Africa in 2014 by Braveman
+            Moyo (see Braveman's story <a href="https://www.capacityzurich.ch/participants/bravemans-story/">here</a>) and five other members. Through our programs, we provide
+            access, spaces, and the necessary equipment for children and youths to discover, learn, and practice the
+            sport. Besides that, we are helping to establish an African skate culture and the industries that go with
+            it.</p>
+        <p>Our objective is to use skateboarding as a vehicle for social and economic change in African communities. We
+            empower youths through skating activities and learning opportunities and promote an active, healthy lifestyle
+            and eco-mobility. In Zimbabwe, a partner organization is currently being established to offer our programs
+            there as well. In Switzerland, the association One Love Central Switzerland was founded in 2021 to support
+            the project implementation in South Africa and Zimbabwe as well as in other African countries in the
+            future.</p>
+    </div>
+
+ <!-- Team Section -->
+<div class="container team-section">
+    <h2>Meet Our Team</h2>
+    <div class="row">
+        <div class="col-md-3 team-member d-flex justify-content-center">
+            <img src="{% static 'oneloveapp/images/braveman.jpg' %}" alt="Team Member 1">
+            <h4>Braveman Moyo</h4>
+            <p>Founder</p>
+        </div>
+        <div class="col-md-3 team-member d-flex justify-content-center">
+            <img src="{% static 'oneloveapp/images/Sandra.jpg' %}" alt="Team Member 2">
+            <h4>Sandra Hanselmann</h4>
+            <p>Administration and Fundraising</p>
+        </div>
+        <div class="col-md-3 team-member d-flex justify-content-center">
+            <img src="{% static 'oneloveapp/images/ladina.jpg' %}" alt="Team Member 3">
+            <h4>Ladina Caprez</h4>
+            <p>Communication</p>
+        </div>
+        <div class="col-md-3 team-member d-flex justify-content-center">
+            <img src="{% static 'oneloveapp/images/kyle.jpg' %}" alt="Team Member 4">
+            <h4>Kyle Kheswa</h4>
+            <p>Project Manager</p>
+        </div>
+    </div>
+</div>
+
+
+
+    <!-- Footer -->
+    <footer class="footer mt-5">
+        <div class="container text-center">
+            <p>&copy; 2023 One Love Central. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies (Popper.js and jQuery) -->
+    <script src="{% static 'path/to/bootstrap/js/jquery.min.js' %}"></script>
+    <script src="{% static 'path/to/bootstrap/js/popper.min.js' %}"></script>
+    <script src="{% static 'path/to/bootstrap/js/bootstrap.min.js' %}"></script>
+
+</body>
+
+</html>

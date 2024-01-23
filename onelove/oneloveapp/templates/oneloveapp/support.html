@@ -1,0 +1,88 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Support Us - One Love Central</title>
+    
+    <!--  CSS file -->
+    <link rel="stylesheet" type="text/css" href="{% static 'oneloveapp/css/support-styles.css' %}">
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="{% url 'home' %}">
+            <img src="{% static 'oneloveapp/images/OneLove-Logo-01-1024x1024.png' %}" alt="One Love Logo" class="logo-img">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="{% url 'home' %}">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'about' %}">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'support' %}">Support Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'blog' %}">Blog</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Jumbotron / Hero Section -->
+<div class="jumbotron">
+    <h1 class="display-4">Support Us</h1>
+    <p class="lead">Your support keeps us rolling!</p>
+</div>
+
+<!-- Content Section -->
+<div class="container content-section">
+    <!-- Donation Item 1 -->
+    <div class="donation-item">
+        <p>For a donation of R100, you receive a One Love T-tool. Please leave your address in the remarks if you would like one, and we will post it to you.</p>
+        <img src="{% static 'oneloveapp/images/t-tool-donation-image.jpg' %}" alt="T-Tool Donation Image" class="donation-image">
+    </div>
+
+    <!-- Donation Item 2 -->
+    <div class="donation-item">
+        <p>If you gift us R500, we would like to reward you with a One Love grip tape. Please leave your address in the remarks if you would like one, and we will post it to you.</p>
+        <img src="{% static 'oneloveapp/images/grip-donation-image.jpg' %}" alt="Grip Tape Donation Image" class="donation-image">
+    </div>
+
+    <!-- Donation Item 3 -->
+    <div class="donation-item">
+        <p>The first person who donates R5000 will receive this set of three boards of the One Love limited edition series. Please don’t forget to leave your address in the remarks.</p>
+        <img src="{% static 'oneloveapp/images/limited_edition_boards_image.jpg' %}" alt="Limited Edition Boards Image" class="donation-image">
+    </div>
+</div>
+
+    <!-- PayPal Donation Button -->
+    <div class="text-center mt-4">
+        <form action="https://www.paypal.com/donate" method="post" target="_top">
+            <input type="hidden" name="hosted_button_id" value="YOUR_PAYPAL_BUTTON_ID">
+            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button">
+        </form>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="footer mt-5">
+    <div class="container text-center">
+        <p>&copy; 2023 One Love Central. All rights reserved.</p>
+    </div>
+</footer>
+
+
+
+</body>
+</html>

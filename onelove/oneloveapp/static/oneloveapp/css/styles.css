@@ -1,0 +1,89 @@
+/* styles.css */
+
+/* Set the main font family to Spline Sans */
+body {
+    font-family: 'Spline Sans', sans-serif;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #ffffff; /* White color */
+    padding-top: 5px; /* Adjust the top padding as needed */
+    padding-bottom: 5px; /* Adjust the bottom padding as needed */
+}
+
+.navbar-brand {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Apply a max-width and margin to the logo image */
+.logo-img {
+    max-width: 350px; /* Adjust the max-width as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 10px; /* Adjust the margin as needed */
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: center;
+}
+
+.navbar-nav .nav-item {
+    margin: 0 15px;
+}
+
+.navbar-nav .nav-link {
+    color: #000000; 
+}
+
+.navbar-nav .nav-link:hover {
+    color: #FF8427; 
+}
+
+/* Jumbotron Styles */
+.jumbotron {
+    font-family: 'Spline Sans', sans-serif;
+    background-color: #FF8427; 
+    text-align: center;
+    padding: 50px 0;
+    margin-bottom: 0; 
+    color: #000000; 
+}
+
+/* Program Section Styles */
+.program-section {
+    text-align: center;
+    padding: 50px 0;
+}
+
+/* Vision Section Styles */
+.vision-section {
+    font-family: 'Spline Sans', sans-serif;
+    text-align: center;
+    padding: 20px 0;
+    background-color: #FFFFFF; 
+    color: #000000; 
+}
+
+.vision-section img {
+    max-width: 100%; 
+    border-radius: 8px; 
+    margin-bottom: 5px;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #FF8427; 
+    color: #FFFFFF; 
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Apply color scheme to the site */
+body {
+    background-color: #FFFFFF;
+}

@@ -1,0 +1,81 @@
+/* blog-styles.css */
+
+
+body {
+    font-family: 'Spline Sans', sans-serif;
+    background-color: #FFFFFF; 
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #ffffff; 
+    padding-top: 5px; 
+    padding-bottom: 5px; 
+}
+
+.navbar-brand {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Apply a max-width and margin to the logo image */
+.logo-img {
+    max-width: 350px; 
+    height: auto; 
+    margin-right: 10px; 
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: center;
+}
+
+.navbar-nav .nav-item {
+    margin: 0 15px;
+}
+
+.navbar-nav .nav-link {
+    color: #000000; 
+}
+
+.navbar-nav .nav-link:hover {
+    color: #FF8427; 
+}
+
+/* Blog Post Styles */
+.blog-post {
+    margin-bottom: 30px;
+}
+
+/* Jumbotron Styles */
+.jumbotron {
+    font-family: 'Spline Sans', sans-serif;
+    background-color: #FF8427; 
+    text-align: center;
+    padding: 50px 0;
+    margin-bottom: 0; 
+    color: #000000; 
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #FF8427; 
+    color: #FFFFFF; 
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Responsive Styles */
+@media (max-width: 767px) {
+    .navbar-nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar-nav .nav-item {
+        margin: 10px 0;
+    }
+}
