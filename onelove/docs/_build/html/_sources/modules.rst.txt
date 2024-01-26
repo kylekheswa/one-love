@@ -8,3 +8,5 @@ onelove
    settings
    urls
    wsgi
+   views
+   models

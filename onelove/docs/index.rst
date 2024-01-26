@@ -11,10 +11,7 @@ Welcome to One Love Central's documentation!
    :caption: Contents:
 
    modules
-   asgi
-   settings
-   wsgi
-   urls
+   
 
 
 
